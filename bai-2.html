@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    initArr();
+    function initArr() {
+        let arr = [];
+        for (let i = 1; i < 3 ; i++) {
+            let item = prompt("Nhap so");
+            arr.push(item);
+        } return arr;
+        function avgArr() {
+            let arr = initArr();
+            let sum = 0;
+            let avg;
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i];
+        }
+         avg = sum/arr.length;
+        return avg;
+    }
+    avgArr();
+    let a = avgArr();
+    alert(a);
+</script>
+</body>
+</html>

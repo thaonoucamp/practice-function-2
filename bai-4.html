@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="a" placeholder="Enter number the a">
+<input type="number" id="b" placeholder="Enter number the b">
+<input type="button" id="sum" onclick="sumNum()" value="+" placeholder="+">
+<input type="button" id="sub" onclick="subNum()" value="-" placeholder="+">
+<input type="button" id="multi" onclick="multiNum()" value="x" placeholder="+">
+<input type="button" id="div" onclick="divNum()" value="/" placeholder="+">
+<p id="result"></p>
+<script>
+    function sumNum() {
+        let a = +document.getElementById("a").value;
+        let b = +document.getElementById("b").value;
+        let sum = a + b;
+        document.getElementById("result").innerHTML = sum;
+    }
+</script>
+</body>
+</html>
